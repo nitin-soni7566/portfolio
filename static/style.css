@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sideBar {
+    position: absolute;
+    background-color: rgb(71 131 140);
+    width: 10rem;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    transition: tranfrom 0.3s ease-in;
+}
+
+.sideBar nav li {
+    list-style: None;
+    font-size: 1.5rem;
+    padding: 25px 0px;
+}
+
+.sideBar nav {
+    padding: 45px;
+}
+
+.sideBar nav li a {
+    color: aliceblue;
+    text-decoration: None;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90rem;
+    /* display: flex;  */
+}
+
+.container {
+    display: flex;
+}
+
+.info {
+    /* background-color: blue; */
+    height: 78vh;
+    width: 80vw;
+    margin: 54px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hello {
+    font-size: 46px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+.name {
+    padding: 6px 4px 24px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.desc {
+    font-family: 'Inter', sans-serif;
+}
+
+.devpic img {
+    height: 68vh;
+}
+
+.buttons button {
+    margin: 6px auto;
+    border-radius: 16px;
+    padding: 11px 14px;
+    font-size: 10px;
+    cursor: pointer;
+    color: yellow;
+    background-color: black;
+    font-weight: bold;
+}
+
+.buttons button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.devinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactForm {
+    font-family: 'Inter', sans-serif;
+    padding: 70px 29px;
+}
+
+.contactForm h2 {
+    padding: 1px 215px;
+    font-size: 3rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.contactForm form {
+    padding-left: 146px;
+}
+
+.contactForm form input {
+    font-size: 1.5rem;
+    width: 20rem;
+}
+
+.contactForm form input:hover {
+    border: 3px solid rgb(76, 114, 220);
+}
+
+.contactForm form label {
+    font-size: 1.5rem;
+}
+
+.mt3 {
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+}
+
+.contactForm button {
+    padding: 12px 25px;
+    margin-top: 12px;
+    color: rgb(236, 214, 20);
+    background-color: rgb(0, 1, 1);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contactForm button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(236, 214, 20);
+}
+
+.hamCross {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross {
+    padding: 4px 106px;
+}
+
+.sideBarGo {
+    transform: translate(-514px, 0px);
+    position: absolute;
+}
+
+@media (max-width: 1273px) {
+    .hello {
+        font-size: 25px;
+    }
+    .devpic {
+        display: None;
+    }
+    .contactForm h2 {
+        font-size: 1.5rem;
+    }
+}
